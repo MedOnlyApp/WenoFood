@@ -2,7 +2,7 @@ const welcome_panel = document.getElementById("welcome_id")
 const img_1 = document.querySelector(".img-1")
 const img_2 = document.querySelector(".img-2")
 
-let images = ["../static/img/pizza-png.png", "../static/img/burger-png.png", "../static/img/pizza-2-png.png", "../static/img/double-burger-png.png"];
+let images = ["static/img/pizza-png.png", "static/img/burger-png.png", "static/img/pizza-2-png.png", "static/img/double-burger-png.png"];
 let angle = 0
 let angle_2 = 0
 let angle_3 = 0
@@ -40,4 +40,5 @@ const interval = setInterval(() => {
     }
     
     i++
+
 }, 4000)
