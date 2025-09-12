@@ -1,15 +1,15 @@
 
 
-const burger_list = ["../static/img/cheese-burger.png", "../static/img/double-cheese-burger.png", "../static/img/chicken-burger.png", "../static/img/chicken-burger.jpg"]
-const sandwich_list = ["../static/img/sandwich-dinde.jpeg", "../static/img/sandwich-escalop.png", "../static/img/sandwich-mixte.jpg", "../static/img/sandwich-saucisse.jpg", "../static/img/sandwich-thon.jpg", "../static/img/sandwich-viande-hachée.jpg"]
-const panini_list = ["../static/img/panini-3.jpg", "../static/img/panini-2.jpg", "../static/img/panini-3.jpg"]
-const tacos_list = ["../static/img/tacos-XL-XXL.png", "../static/img/tacos-viande-hachée-1.jpg", "../static/img/tacos-dinde-1.jpg", "../static/img/tacos-escalope.jpg", "../static/img/tacos-mixte.png", "../static/img/tacos-saucisse.jpeg"]
+const burger_list = ["static/img/cheese-burger.png", "static/img/double-cheese-burger.png", "static/img/chicken-burger.png", "static/img/chicken-burger.jpg"]
+const sandwich_list = ["static/img/sandwich-dinde.jpeg", "static/img/sandwich-escalop.png", "static/img/sandwich-mixte.jpg", "static/img/sandwich-saucisse.jpg", "static/img/sandwich-thon.jpg", "static/img/sandwich-viande-hachée.jpg"]
+const panini_list = ["static/img/panini-3.jpg", "static/img/panini-2.jpg", "static/img/panini-3.jpg"]
+const tacos_list = ["static/img/tacos-XL-XXL.png", "static/img/tacos-viande-hachée-1.jpg", "static/img/tacos-dinde-1.jpg", "static/img/tacos-escalope.jpg", "static/img/tacos-mixte.png", "static/img/tacos-saucisse.jpeg"]
 const tacos_gratine_list = []
-const pasticco_list = ["../static/img/pasticco-1.jpg", "../static/img/pasticco-2.jpg"]
+const pasticco_list = ["static/img/pasticco-1.jpg", "static/img/pasticco-2.jpg"]
 const plat_list = []
-const salad_list = ["../static/img/salad-fruit.jpg", "../static/img/salade-niçoise.png"]
-const jus_list = ["../static/img/jus-fruit.jpg", "../static/img/jus-d'avocat.jpg", "../static/img/jus-d'orange.jpg"]
-const drinks_list = ['../static/img/drinks-large.jpg', '../static/img/drinks-canned.jpg', '../static/img/drinks-medium.jpg']
+const salad_list = ["static/img/salad-fruit.jpg", "static/img/salade-niçoise.png"]
+const jus_list = ["static/img/jus-fruit.jpg", "static/img/jus-d'avocat.jpg", "static/img/jus-d'orange.jpg"]
+const drinks_list = ['static/img/drinks-large.jpg', 'static/img/drinks-canned.jpg', 'static/img/drinks-medium.jpg']
 
 const burger_img = document.getElementById("burger-img-id")
 const sandwich_img = document.getElementById("sandwich-img-id")
@@ -61,6 +61,7 @@ setInterval(() => {
     }, 300)
     index++
 }, 3000)
+
 
 
 
