@@ -1,0 +1,135 @@
+main > #menu_id {
+    box-sizing: border-box;
+    padding: 85px 5vw;
+
+    border: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#menu_id > #menu_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menu_id > #menu_header > p {
+    margin-top: 0;
+    font-size: larger;
+    font-weight: lighter;
+
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#menu_id > #menu_header > span {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 5px;
+    
+    background-image: linear-gradient(90deg, #ff8000, #fba300, rgb(243, 226, 49), #fba300, #ff8000);
+    background-size: 400%;
+    background-position: left;
+    animation: moving_gradient 5s infinite ease-in-out alternate;
+    
+    border-radius: 5px;
+}
+
+
+#menu_id > #menu_body {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+}
+
+#menu_id > #menu_body > .categorie-section {
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+#menu_id > #menu_body > .categorie-section > h1 {
+    color: rgb(241, 91, 4);
+    text-align: center;
+    font-family: cursive;
+    font-size: 5vw;
+}
+
+#menu_id > #menu_body > .categorie-section > div {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5vw;
+}    
+
+#menu_id > #menu_body > .categorie-section > div > .category-img {
+    width: 30%;
+    height: clamp(200px, 30vw, 400px);
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: solid 3px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    border-radius: 10px;
+
+    position: relative;
+}
+
+#menu_id > #menu_body > .categorie-section > div > .category-img > img {
+    height: 100%;
+    transition: opacity 0.5s;
+}
+
+#menu_id > #menu_body > .categorie-section > div > .category-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#menu_id > #menu_body > .categorie-section > div > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+hr {
+    flex: 1;
+}
+
+main > #menu_id > #menu_body > .categorie-section > div > div > div > h2 {
+    font-size: clamp(15px, 1.5vw, 28px);
+    min-width: fit-content;
+    font-family: "Kaushan Script", cursive;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    
+    main > #menu_id > #menu_body {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    main > #menu_id > #menu_body {
+        grid-template-columns: 1fr;
+    }
+
+}

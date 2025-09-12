@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#arrow_up_id {
+    opacity: 0;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+
+    border: none;
+    background-color: rgb(231, 163, 28);
+    box-shadow: 0 0 20px rgb(78, 96, 163);
+
+    transition: opacity 0.4s, bottom 0.6s, background-color 0.3s;
+
+    z-index: 50;
+    color: white;
+}
+
+#arrow_up_id:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(78, 96, 163);
+}
+
+.float1 {
+    position: fixed;
+    bottom: 5%;
+    left: 7%;
+
+    background-color: rgba(255, 255, 255, 0.504);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.float2 {
+    position: fixed;
+    top: 5%;
+    right: 10%;
+
+    background-color: rgba(255, 255, 255, 0.504);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.float3 {
+    position: fixed;
+    bottom: 5%;
+    right: 15%;
+
+    background-color: rgba(255, 255, 255, 0.504);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+@keyframes up-down {
+    to {
+        transform: translateY(1px);
+    }
+    
+}
