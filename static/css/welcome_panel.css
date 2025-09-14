@@ -141,7 +141,7 @@ main > #welcome_id > .img-carasol > img {
 
 @media only screen and (max-width: 800px) {
     main > #welcome_id {
-        height: fit-content;
+        height: fit-content !important;
         padding-bottom: 20px;
         padding-right: 20px;
     }
@@ -149,6 +149,7 @@ main > #welcome_id > .img-carasol > img {
     main > #welcome_id > div:first-child {
         gap: 40vh;
         width: 100vw;
+        height: fit-content;
     }
 
     main > #welcome_id > .img-carasol {
@@ -167,3 +168,4 @@ main > #welcome_id > .img-carasol > img {
 
 
 }
+
