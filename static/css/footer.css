@@ -36,19 +36,29 @@ footer > .working-hours {
     padding: 10px 30px;
 }
 
-footer > .working-hours > span {        
+footer > .working-hours > a {        
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
+
+    text-decoration: none;
+
+    /* background-color: blue; */
+    border-radius: 5px;
+    padding: 5px 0;
 }
 
-footer > .working-hours > span > span {        
+footer > .working-hours > a:hover {        
+    background-color: rgba(20, 20, 20, 0.26);
+}
+
+footer > .working-hours > a > span {        
     display: inline-block;
 }
 
-footer > .working-hours > span > span:first-child {
+footer > .working-hours > a > span:first-child {
     background-color: rgb(249, 157, 38);
     color: rgb(255, 255, 255);
     width: 4.5vw;
@@ -64,15 +74,16 @@ footer > .working-hours > span > span:first-child {
     border-radius: 50%;
 }
 
-footer > .working-hours > span > span:last-child > div:first-child {
+footer > .working-hours > a > span:last-child > div:first-child {
     font-size: 15px;
     color: rgb(98, 98, 98);
     margin-bottom: 5px;
 }
 
-footer > .working-hours > span > span:last-child > div:last-child {
+footer > .working-hours > a > span:last-child > div:last-child {
     font-size: 16px;
     font-weight: 450;
+    color: black;
 }
 
 footer > div:last-child {
@@ -195,24 +206,42 @@ footer > div > #location_id > iframe {
 }
 
 
+@media only screen and (max-width: 400px) {
+
+    /* footer {
+        box-sizing: border-box;
+        padding: 150px 7.5vw 30px 7.5vw;
+    } */
+
+    footer > .working-hours {        
+        /* top: -94px;
+        box-sizing: border-box; */
+        padding-left: 10vw;
+    }
+}
+
 @media only screen and (max-width: 563px) {
 
     footer {
         box-sizing: border-box;
         padding: 150px 7.5vw 30px 7.5vw;
+        position: relative;
     }
 
     footer > .working-hours {        
         top: -94px;
-        box-sizing: border-box;
-        padding-left: 20vw;
+        /* box-sizing: border-box; */
+        padding-left: 10vw;
+        width: 90%;
+        /* right: 10%; */
+        /* left: 10%; */
     }
 }
 
 
 @media only screen and (max-width: 760px) {
 
-    footer > .working-hours > span {        
+    footer > .working-hours > a {        
         flex-grow: 1;
         display: flex;
         align-items: center;
