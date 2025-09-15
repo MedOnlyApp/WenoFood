@@ -111,7 +111,8 @@ hr {
 }
 
 main > #menu_id > #menu_body > .categorie-section > div > div > div > h2 {
-    font-family: cursive;
+    /* font-family: cursive; */
+    font-family: Rubik;
     font-size: clamp(15px, 1.5vw, 28px);
     min-width: fit-content;
 }
@@ -133,3 +134,4 @@ main > #menu_id > #menu_body > .categorie-section > div > div > div > h2 {
     }
 
 }
+
